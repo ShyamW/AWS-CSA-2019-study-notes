@@ -82,7 +82,7 @@ A security group acts as a virtual firewall for your instance to control inbound
 * Snapshots exists in S3.
 * Snapshots are a point in time copies of Volumes.
 * Snapshots are incremental (only differences are saved)
-* Snapshot of root volumes require the instance to be stopped.
+* Snapshot of root volumes don't require the instance to be stopped (but less performance).
 * _You can't delete a snapshot of an EBS volume that is used as the root device of a registered AMI._
 * You can change EBS volumes size and type on the fly.
 * To move an EC2 volume from one AZ/Region to another, take a snap or an image of it, then you can copy them to the new AZ/Region.
