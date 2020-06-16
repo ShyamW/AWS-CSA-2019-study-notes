@@ -132,6 +132,11 @@ dig +short MyClassicELB-57286656.eu-west-2.elb.amazonaws.com
 _At the time of writing, the lab instructs you to create one EC2 instance and configure the load balancer to simply point against it.
 My suggestion is to create 2 instances instead and change the `index.html` in something like `instance_1` and `instance_2` so you can see what box the load balancer decides to send your requests. Doing so, allows you to also confirm that if an instance is down, the load balancer automatically forwards traffic to the remaining one still online._
 
+### Networking
+ENI - Basic Networking, can seperately manage prod and logging network
+EN Enhanced Network- For speeds b/t 10gbps - 100 gbps
+EFA Elastic Fiber Adapater - HPC, LM applications, OS bypass
+
 ### CloudWatch - Lab
 
 * Standard monitoring is 5 min and * Detailed monitoring is 1 min (you will be charged for it)
