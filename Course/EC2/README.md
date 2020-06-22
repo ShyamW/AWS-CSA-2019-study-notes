@@ -221,12 +221,13 @@ You can launch or start instances in a placement group, which determines how ins
 * Partition – spreads instances across logical partitions, ensuring that instances in one partition do not share underlying hardware with instances in other partitions.
 
 Some notes about placement groups:
+* Spread and Partitioned groups can be in multi-az, clister can't
 
 * The name you specify for a placement group must be unique within your AWS account.
-* Only specific types of instances can be launched in a placement group.
+* Only specific types of instances can be launched in a placement group. Homogenous instances recommended in clustered placement groups
 * You can't merge placement groups.
-* You can't move an existing instance into a placement group.
-* If the exam refers to placement groups, without mentioning which type, it's most probably talking about the Cluster ones since those are the old ones.
+* You can move an existing instance into a placement group. Instance must be stopped, then moved/removed from AWS SDK/CLI not Console
+
 
 ## [EFS](https://aws.amazon.com/efs/)
 
