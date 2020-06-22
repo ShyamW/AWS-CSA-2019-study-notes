@@ -44,18 +44,11 @@ Are great for sequential access (processing log files, bigdata work flows as an 
 * Cold HDD (sc1): Lower cost storage, like file servers, can't be a boot volume.
 * Magnetic (standard): Lowest cost per gigabyte of all EBS. It's bootable and it's from the previous storage generation.
 
-### [RAID Arrays using EBS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html)
+### FSX
 
-As you would do in a bare-metal server, you can also create [RAID](https://en.wikipedia.org/wiki/RAID) arrays within AWS EC2 boxes using EBS volumes.
-
-* Remeber that the RAID available in AWS is only **software**
-* You can have two types of RAID:
-
-  * [RAID 0](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_0) – splits ("stripes") data evenly across two or more disks. When I/O performance is more important than fault tolerance; for example, as in a heavily used database (where data replication is already set up separately). You can use RAID 0 configurations in scenarios where you are using heavy databases with perhaps mirroring and replication.
-  * [RAID 1](https://en.wikipedia.org/wiki/Standard_RAID_levels#RAID_1) – consists of an exact copy (or mirror) of a set of data on two or more disks. When fault tolerance is more important than I/O performance; for example, as in a critical application. With RAID 1 you get more data durability in addition to the replication features of the AWS cloud.
-  * RAID 5 and RAID 6 are not recommended for Amazon EBS because the parity write operations of these RAID modes consume some of the IOPS available to your volumes. Depending on the configuration of your RAID array, these RAID modes provide 20-30% fewer usable IOPS than a RAID 0 configuration. Increased cost is a factor with these RAID modes as well; when using identical volume sizes and speeds, a 2-volume RAID 0 array can outperform a 4-volume RAID 6 array that costs twice as much.
-
-Remember also that you can create [snapshots of your RAID arrays](https://aws.amazon.com/premiumsupport/knowledge-center/snapshot-ebs-raid-array/)
+FSX for Windows - centralized storage for windows based applications (sharepoint, SQL Server, Workspaces, IIS)
+FSX for Lustre - fast, high capactiy storage for ML/HPC (high performance computing), can store to s3
+EBS  - distributed, resilient storage for linux instances
 
 ### Launch an EC2 Instance - Lab
 
