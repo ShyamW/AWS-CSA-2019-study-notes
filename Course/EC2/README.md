@@ -221,8 +221,7 @@ You can launch or start instances in a placement group, which determines how ins
 * Partition – spreads instances across logical partitions, ensuring that instances in one partition do not share underlying hardware with instances in other partitions.
 
 Some notes about placement groups:
-* Spread and Partitioned groups can be in multi-az, clister can't
-
+* Spread and Partitioned groups can be in multi-az, cluster can't
 * The name you specify for a placement group must be unique within your AWS account.
 * Only specific types of instances can be launched in a placement group. Homogenous instances recommended in clustered placement groups
 * You can't merge placement groups.
@@ -240,8 +239,6 @@ Amazon EFS provides scalable file storage for use with Amazon EC2. You can creat
 * Data is stored across multiple AZ.
 * Read after write consistency.
 
-* You need to make sure that the EC2 instance that needs to connect with the EFS volume, is associated with the same security group you have on the EFS volume.
-* You can assign permissions at the file level and at the folder level.
 
 ## [Lambda](https://aws.amazon.com/lambda/)
 
