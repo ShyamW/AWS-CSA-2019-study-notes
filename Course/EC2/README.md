@@ -57,8 +57,6 @@ Are great for sequential access (processing log files, bigdata work flows as an 
 
 ## Security groups - Lab
 
-### [What's a security group](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
-
 A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
 
 * All Inbound traffic is Blocked by Default.
