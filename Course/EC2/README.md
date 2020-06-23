@@ -2,8 +2,6 @@
 
 ## EC2
 
-### [What's EC2](https://aws.amazon.com/ec2/)
-
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
 
 ### [EC2 Options](https://aws.amazon.com/ec2/pricing/)
@@ -46,9 +44,9 @@ Are great for sequential access (processing log files, bigdata work flows as an 
 
 ### FSX
 
-FSX for Windows - centralized storage for windows based applications (sharepoint, SQL Server, Workspaces, IIS)
-FSX for Lustre - fast, high capactiy storage for ML/HPC (high performance computing), can store to s3
-EBS  - distributed, resilient storage for linux instances
+* FSX for Windows - centralized storage for windows based applications (sharepoint, SQL Server, Workspaces, IIS)
+* FSX for Lustre - fast, high capactiy storage for ML/HPC (high performance computing), can store to s3
+* EBS  - distributed, resilient storage for linux instances
 
 ### Launch an EC2 Instance - Lab
 
