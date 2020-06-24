@@ -157,7 +157,7 @@ If you want to access a specific item, simply add it at the end of your request:
 ami-12345678
 ```
 
-There is also one URL for user data
+There is also one URL for user data (gives bootstrap script you used)
 
 ```bash
 [ec2-user ~]$ curl http://169.254.169.254/latest/user-data/
