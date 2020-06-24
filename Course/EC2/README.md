@@ -190,6 +190,15 @@ Amazon EFS provides scalable file storage for use with Amazon EC2. You can creat
 * Data is stored across multiple AZ.
 * Read after write consistency.
 
+## WAF 
+Web application firewall that lets you monitor requests forwarded to cloudfront, alb, api gateway
+
+abilities:
+
+  * allow requests form all except blacklist
+  * allow request from only whitelist
+  * count requests that match properties specified
+
 ## Elastic Load Balancers
 
 ### [What's an Elastic Load Balancer](https://aws.amazon.com/elasticloadbalancing/)
