@@ -123,6 +123,20 @@ Use Multipart uploads to increase speeds
 Reccommended for 100MB, required for 5GB
 Use s3 byte-range fetches to download faster
 
+# S3 & Glacier Select
+
+S3 Select - used to retrieve subset of data (rows or columns) from object using SQL
+ -Saves money on data transfer and increases speed
+ 
+Glacier Select - S3 Select in Glacier
+
+# DataSync
+Used to move large amountd of data from on-premise
+Used with NFS and SMB compatible file systems
+REplications can be done hourly, daily, weekly
+install datasync agent to start replication
+Can also be used to replicate EFS to EFS
+
 ### [S3 Cross region replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html)
 
 * Regions must be unique
