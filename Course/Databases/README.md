@@ -112,8 +112,8 @@ Columnar data stores can be compressed much more than row-based data.
 Elasticache: Managed, Redis or Memcached-compatible in-memory data store. Basically, it's a DB that saves everything in memory to increases I/O performance.
 
 * Types of Elasticache:
-  * Memcached
-  * Redis: In memory key-value store
+  * Memcached (can scale horizontally)
+  * Redis: In memory key-value store (has disaster recovery, multi-az)
 
 ### [RDS Aurora](https://aws.amazon.com/rds/aurora/)
 
