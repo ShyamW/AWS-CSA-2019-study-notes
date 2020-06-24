@@ -137,6 +137,12 @@ REplications can be done hourly, daily, weekly
 install datasync agent to start replication
 Can also be used to replicate EFS to EFS
 
+# Signed URLs and Cookies
+Used to secure content so only authorized people can access it
+Signed URL - for an individual file
+Signed cookie - for multiple files
+Use Cloudfront for EC2 origin, signed s3 url for s3 bucket
+
 ### [S3 Cross region replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html)
 
 * Regions must be unique
@@ -149,8 +155,6 @@ Only creations and modifications are replicated to the bucket in the other regio
 * You can't replicate over multiple buckets, the maps are always 1-to-1
 
 ## [CloudFront](https://aws.amazon.com/cloudfront/)
-
-### [What's a CDN](https://www.cloudflare.com/learning/cdn/what-is-a-cdn/)
 
 * A content delivery network or content distribution network is a geographically distributed network of proxy servers and their data centres
 
