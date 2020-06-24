@@ -1,7 +1,5 @@
 # CHAPTER 4 | EC2 The Backbone of AWS
 
-## EC2
-
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. It is designed to make web-scale cloud computing easier for developers.
 
 ### [EC2 Options](https://aws.amazon.com/ec2/pricing/)
