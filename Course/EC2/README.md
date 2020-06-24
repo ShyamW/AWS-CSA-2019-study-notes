@@ -93,6 +93,14 @@ A security group acts as a virtual firewall for your instance to control inbound
   * You can not detach Instance Store Volumes.
   * Instance store volumes cannot be kept once the instance is terminated.
 
+### Hibernate
+
+-Preserves in memory ram on EBS
+Faster boot up, since OS doesn't reload
+instance ram must be <150GB
+Available for all OS
+Can't hibernate longer than 60 days
+Available for On-Demand and Reserved Instances
 
 ### Networking
 * ENI - Basic Networking, can seperately manage prod and logging network
