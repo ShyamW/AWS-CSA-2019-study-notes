@@ -14,6 +14,10 @@ Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure,
     * Price – The Spot price is greater than your maximum price.
     * Capacity – If there are not enough unused EC2 instances to meet the demand for Spot Instances, Amazon EC2 interrupts Spot Instances. The order in which the instances are interrupted is determined by Amazon EC2.
     * Constraints – If your request includes a constraint such as a launch group or an Availability Zone group, these Spot Instances are terminated as a group when the constraint can no longer be met.
+    Spot instances save up to 90% off on-demand instances
+    Useful for computing that doesn't need persistent storage
+    Can Use spot block to stop instances from terminating
+    Spot Fleet is collection of spot instances and (optionally demand instances)
 
 
 
