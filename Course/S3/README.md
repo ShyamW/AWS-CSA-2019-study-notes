@@ -109,6 +109,19 @@ Compliance Mode - protected object version can't be overwritten/deleted by any u
 
 S3 Glacier Vault Lock - allows you to deploy and enforce compliance controls for s3 glacier vaults with vault lock policy. Can specify controls such as WORM, and lock policy from future edits. once locked, policy can't change
 
+# S3 Performance
+Prefix - bucketname/THISISTHE/PREFIX/file.jpeg
+3500 PUT/DEL/COPY/POST and 5500 GET/HEAD Requests per second per prefix
+More prefixes multiply this, ie 2 prefixes give 1100 GETS
+
+SSE-KMS has encypt/decrypt limits
+Uploading/Downloading counts toward KMS quota. 
+Quota can't be increased
+Region specific limits of 5500, 10k, 30k
+
+Use Multipart uploads to increase speeds 
+Reccommended for 100MB, required for 5GB
+Use s3 byte-range fetches to download faster
 
 ### [S3 Cross region replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html)
 
