@@ -92,6 +92,23 @@ S3 is charged for:
     [ObjectVersioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/ObjectVersioning.html)
     and
     [Versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html)
+    
+# S3 Object Lock 
+* Used to store objects using WORM (Write once, read many) model.
+* applied to objects or whole bucket
+
+Retention Period - protects object version for fixed amount of time (timestamp stored on object). After retention period, object version can be overwritten/deleted unless you place legal hold.
+
+Legal Hold - prevents object version from being overwritten/deleted. Has no retention period, a user can remove this with permission.
+
+
+# Modes of Object Lock
+Governance Mode - User's can't overwrite/delete an object version or alter lock setting unless they have special permissions. Special permissions allow ppl to alter retention settings or delete object
+
+Compliance Mode - protected object version can't be overwritten/deleted by any user
+
+S3 Glacier Vault Lock - allows you to deploy and enforce compliance controls for s3 glacier vaults with vault lock policy. Can specify controls such as WORM, and lock policy from future edits. once locked, policy can't change
+
 
 ### [S3 Cross region replication](https://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html)
 
