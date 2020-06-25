@@ -107,6 +107,36 @@ Available for On-Demand and Reserved Instances
 * EN Enhanced Network- For speeds b/t 10gbps - 100 gbps
 * EFA Elastic Fiber Adapater - HPC, LM applications, OS bypass
 
+### Components of HPC
+
+Data Transfer
+  Snowball, Snowmobile (terabytes/petabytes of data)
+  AWS DataSync to store on S3, EFS, FSx for Windows, etc
+  Direct Connect
+  
+Compute & Networking
+  EC2 Instances
+  EC2 Fleets (Spot Instances or Spot Fleets)
+  Placement Groups
+  Enhanced Networking SR-IOV (single root IO virtualization)
+  Elastic Network Adapters or Intel VF interface
+  Elastic Fabric Adapters (OS bypass)
+  
+ Storage
+ Instance attached storage:
+   EBS - Scale up to 64k IOPS with Provisioned IOPS
+   Instance Store: Scale to millions of IOPS, low latency
+ Network Storage
+   S3: distributed object-based storage, not file system
+   EFS: scale IOPS based on total size, has provisioned iops
+   FSX for Lustre: HPC-optimzied distributed file system, millions of IOPS, backed by S3
+   
+   Orchestration & Automation
+   AWS Batch
+   AWS ParallelCluster
+   
+  
+  
 ### CloudWatch - Lab
 
 * Standard monitoring is 5 min and * Detailed monitoring is 1 min (you will be charged for it)
